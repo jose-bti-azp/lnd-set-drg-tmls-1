@@ -1,5 +1,7 @@
 # Landing · Set Timeless de Dr. Grandel
 
+Dominio: https://set-timeless.dr-grandel.es
+
 Landing para consumidora final sobre el set Timeless de Dr. Grandel (Revitalizing Cream 50 ml + Eye & Lip 15 ml).
 Sin referencias a tratamiento de cabina ni a centros.
 
@@ -9,6 +11,5 @@ Sin referencias a tratamiento de cabina ni a centros.
 
 Pendiente:
 - Número de WhatsApp de la asesora: variable `WA_NUMBER` al final de `index.html` (formato `34600111222`).
-- Dominio propio (archivo `CNAME`) y URL absoluta de `og:image`.
 
 Publicación con GitHub Pages (rama `main`, carpeta raíz).

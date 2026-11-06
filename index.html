@@ -11,7 +11,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
 <meta property="og:title" content="Set Timeless de Dr. Grandel">
-<meta property="og:description" content="Revitalizing Cream 50 ml + Eye &amp; Lip 15 ml. El ritual antiedad completo, de mañana y de noche.">
+<meta property="og:description" content="Revitalizing Cream 50 ml + Eye &amp; Lip 15 ml. Ahora 95 € en lugar de 190 €. Unidades limitadas.">
 <meta property="og:url" content="https://set-timeless.dr-grandel.es/">
 <meta property="og:image" content="https://set-timeless.dr-grandel.es/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -45,7 +45,7 @@ h2{font-size:clamp(34px,4.4vw,54px)}
 h1 em,h2 em{font-style:italic;color:var(--gold-txt)}
 h3{font-size:28px}
 p.lead{font-size:19px;color:var(--muted);max-width:640px}
-section{padding:110px 0}
+section{padding:110px 0;scroll-margin-top:110px}
 .btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--sans);font-weight:500;font-size:17px;letter-spacing:.04em;text-decoration:none;padding:15px 26px;border-radius:999px;transition:.25s;border:1.5px solid transparent;cursor:pointer}
 .btn svg{width:20px;height:20px;flex:none}
 .btn-wa{background:#6e4420;color:#fff}
@@ -56,7 +56,7 @@ section{padding:110px 0}
 .btn-light:hover{background:var(--gold-soft)}
 
 /* header */
-header{position:fixed;inset:0 0 auto 0;z-index:50;transition:.3s}
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:.3s;background:var(--cream)}
 header.scrolled{background:rgba(246,241,232,.95);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:78px}
 .brand{display:flex;align-items:center;gap:14px;text-decoration:none}
@@ -67,11 +67,11 @@ header.scrolled{background:rgba(246,241,232,.95);backdrop-filter:blur(10px);box-
 .nav ul a{text-decoration:none;font-weight:500}
 .nav ul a:hover{color:var(--gold-txt)}
 .nav .btn{padding:11px 20px;font-size:16px}
-@media (max-width:980px){.nav ul{display:none}}
+@media (max-width:1200px){.nav ul{display:none}}
 @media (max-width:540px){.brand .sep,.brand .tl{display:none}.nav .btn span{display:none}.nav .btn{padding:11px 13px}}
 
 /* hero */
-.hero{padding:130px 0 90px;background:var(--cream)}
+.hero{padding:170px 0 90px;background:var(--cream)}
 .hero-grid{display:grid;grid-template-columns:1fr 1.02fr;gap:60px;align-items:center}
 .hero h1{font-size:clamp(44px,5.8vw,78px);margin:18px 0 24px}
 .hero .lead{color:var(--ink);margin-bottom:34px}
@@ -84,7 +84,7 @@ header.scrolled{background:rgba(246,241,232,.95);backdrop-filter:blur(10px);box-
 .hero-pic .badge{position:absolute;left:-22px;bottom:40px;background:var(--green);color:#fff;padding:20px 24px;border-radius:2px;max-width:250px}
 .hero-pic .badge b{display:block;font-family:var(--serif);font-weight:500;font-size:24px;line-height:1.15;color:var(--gold-soft);margin-bottom:4px}
 .hero-pic .badge span{font-size:16px}
-@media (max-width:900px){.hero{padding-top:110px}.hero-grid{grid-template-columns:1fr;gap:44px}.hero-pic .badge{left:14px;bottom:14px}}
+@media (max-width:900px){.hero{padding-top:150px}.hero-grid{grid-template-columns:1fr;gap:44px}.hero-pic .badge{left:14px;bottom:14px}}
 @media (max-width:600px){.hero-pic .badge{display:none}.hero .facts{grid-template-columns:1fr 1fr;gap:22px 26px}.hero .facts b{font-size:26px}}
 
 /* por qué */
@@ -210,6 +210,37 @@ footer{background:var(--green-ink);color:#ece5d8;padding:46px 0;font-size:16.5px
 footer .f{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
 footer img{height:18px;width:auto}
 
+/* precio */
+.price{display:flex;align-items:center;flex-wrap:wrap;gap:14px 20px;margin:0 0 30px;padding:20px 24px;background:#fff;border:1px solid var(--line);border-left:4px solid #6e4420;border-radius:3px;max-width:560px}
+.price .old{font-size:19px;color:var(--muted)}
+.price .old s{text-decoration-thickness:2px}
+.price .now{font-family:var(--serif);font-weight:600;font-size:52px;line-height:1;color:var(--green);font-variant-numeric:lining-nums}
+.price .off{background:#6e4420;color:#fff;font-weight:600;font-size:16px;letter-spacing:.06em;padding:6px 12px;border-radius:999px}
+.price .lim{flex-basis:100%;font-size:17px;font-weight:600;color:#7a2e12;display:flex;align-items:center;gap:8px}
+.price .lim::before{content:"";width:9px;height:9px;border-radius:50%;background:#b8441c;box-shadow:0 0 0 0 rgba(184,68,28,.5);animation:pulse 1.8s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(184,68,28,0)}100%{box-shadow:0 0 0 0 rgba(184,68,28,0)}}
+@media (prefers-reduced-motion:reduce){.price .lim::before{animation:none}}
+.promo-bar{background:#6e4420;color:#fff;text-align:center;font-size:16px;font-weight:500;letter-spacing:.03em;padding:9px 16px}
+.promo-bar b{font-weight:600}
+.promo-bar .pb-m{display:none}
+@media (max-width:600px){.promo-bar{font-size:15px;padding:8px 10px}.promo-bar .pb-x{display:none}.promo-bar .pb-m{display:inline}}
+header{top:0}
+.final .price-f{display:inline-flex;align-items:baseline;gap:16px;margin:0 auto 30px;flex-wrap:wrap;justify-content:center}
+.final .price-f s{font-size:20px;color:#e6dfd2}
+.final .price-f b{font-family:var(--serif);font-weight:600;font-size:60px;line-height:1;color:var(--gold-soft);font-variant-numeric:lining-nums}
+.final .price-f span{font-size:17px;font-weight:600;color:#fff;background:rgba(255,255,255,.12);padding:6px 12px;border-radius:999px}
+/* compartir */
+.share{background:#fff;text-align:center}
+.share h2{margin:16px auto 16px;max-width:760px}
+.share .lead{margin:0 auto 34px}
+.share-box{max-width:640px;margin:0 auto}
+.share-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.btn-wa-g{background:#1f8f4e;color:#fff}
+.btn-wa-g:hover{background:#18763f}
+.share-link{margin-top:22px;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;font-size:17px}
+.share-link code{font-family:var(--sans);font-weight:600;color:var(--green);background:var(--cream);padding:8px 14px;border-radius:3px;word-break:break-all}
+.share .ok-msg{min-height:26px;margin-top:10px;font-size:16px;color:var(--green);font-weight:600}
+
 .js .rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
 .js .rv.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
@@ -227,6 +258,7 @@ footer img{height:18px;width:auto}
 </svg>
 
 <header id="top">
+  <div class="promo-bar">Promoción: <b>95 €</b> <span class="pb-x">en lugar de</span><span class="pb-m">antes</span> 190 € · Unidades limitadas</div>
   <div class="wrap nav">
     <a class="brand" href="#inicio" aria-label="Dr. Grandel · Timeless">
       <img src="img/wordmark-dark.svg" alt="Dr. Grandel">
@@ -238,6 +270,7 @@ footer img{height:18px;width:auto}
       <li><a href="#ritual">Cómo se usa</a></li>
       <li><a href="#para-quien">Para quién</a></li>
       <li><a href="#preguntas">Preguntas</a></li>
+      <li><a href="#compartir">Compartir</a></li>
     </ul>
     <a class="btn btn-wa" href="#" data-wa data-ev="wa-cabecera"><svg><use href="#wa"/></svg><span>Tu asesora</span></a>
   </div>
@@ -250,6 +283,12 @@ footer img{height:18px;width:auto}
       <span class="eyebrow">Set Timeless · Dr. Grandel</span>
       <h1>Tu ritual antiedad, <em>completo</em> en una caja.</h1>
       <p class="lead">Timeless Revitalizing Cream y Timeless Eye &amp; Lip: la crema que alisa y fortalece tu piel, y el cuidado que trabaja la mirada y los labios. Dos fórmulas con extracto de yemas de haya, pensadas para usarse juntas cada mañana y cada noche.</p>
+      <div class="price" aria-label="Precio de promoción: 95 euros, antes 190 euros">
+        <span class="now">95 €</span>
+        <span class="old">Antes <s>190 €</s></span>
+        <span class="off">−50 %</span>
+        <span class="lim">Unidades limitadas: date prisa</span>
+      </div>
       <div class="ctas">
         <a class="btn btn-wa" href="#" data-wa data-ev="wa-hero"><svg><use href="#wa"/></svg>Habla con tu asesora personal</a>
         <a class="btn btn-ghost" href="#contenido">Ver qué contiene</a>
@@ -431,9 +470,28 @@ footer img{height:18px;width:auto}
     <img class="mono rv" src="img/monogram-light.svg" alt="">
     <span class="eyebrow rv">Tu asesora personal</span>
     <h2 class="rv">¿Es el set Timeless <em>para tu piel</em>?</h2>
-    <p class="lead rv">Escríbele por WhatsApp. Te pregunta cómo está tu piel, resuelve tus dudas y te ayuda a conseguir tu set.</p>
+    <p class="lead rv">Escríbele por WhatsApp. Te pregunta cómo está tu piel, resuelve tus dudas y te reserva tu set al precio de promoción.</p>
+    <div class="price-f rv"><s>190 €</s><b>95 €</b><span>Unidades limitadas</span></div><br>
     <a class="btn btn-light rv" href="#" data-wa data-ev="wa-final"><svg style="color:#25d366"><use href="#wa"/></svg>Habla con tu asesora personal en WhatsApp</a>
-    <p class="small rv">Atención personal, sin compromiso.</p>
+    <p class="small rv">Atención personal, sin compromiso. Promoción hasta agotar unidades.</p>
+  </div>
+</section>
+
+<!-- COMPARTIR -->
+<section class="share" id="compartir">
+  <div class="wrap">
+    <span class="eyebrow rv">Mejor juntas</span>
+    <h2 class="rv">Compártelo con <em>tus amigas</em></h2>
+    <p class="lead rv">¿Conoces a alguien a quien le encantaría su set Timeless a mitad de precio? Mándale el enlace antes de que se agoten.</p>
+    <div class="share-box rv">
+      <div class="share-btns">
+        <a class="btn btn-wa-g" id="share-wa" href="#" target="_blank" rel="noopener" data-ev="compartir-whatsapp"><svg><use href="#wa"/></svg>Enviar por WhatsApp</a>
+        <button class="btn btn-ghost" id="share-copy" type="button" data-ev="compartir-copiar">Copiar enlace</button>
+        <button class="btn btn-ghost" id="share-native" type="button" hidden data-ev="compartir-otras">Compartir…</button>
+      </div>
+      <div class="share-link"><span>Enlace:</span><code id="share-url">set-timeless.dr-grandel.es</code></div>
+      <p class="ok-msg" id="share-ok" aria-live="polite"></p>
+    </div>
   </div>
 </section>
 
@@ -453,9 +511,22 @@ footer img{height:18px;width:auto}
      Pon aquí el número con prefijo de país y sin espacios ni +, p. ej. "34600111222".
      Mientras esté vacío, los botones abren WhatsApp para elegir contacto. */
   var WA_NUMBER = "";
-  var WA_TEXT = "Hola, me interesa el set Timeless de Dr. Grandel y me gustaría hablar con mi asesora personal.";
+  var WA_TEXT = "Hola, me interesa el set Timeless de Dr. Grandel en promoción a 95 € y me gustaría hablar con mi asesora personal.";
   var url = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(WA_TEXT);
   document.querySelectorAll('[data-wa]').forEach(function(a){a.href=url;a.target="_blank";a.rel="noopener"});
+
+  /* ===== Compartir ===== */
+  var SHARE_URL = "https://set-timeless.dr-grandel.es/";
+  var SHARE_TEXT = "Mira este set antiedad de Dr. Grandel: Timeless Revitalizing Cream + Eye & Lip, ahora a 95 € en lugar de 190 €. Unidades limitadas:";
+  var ok=document.getElementById('share-ok');
+  document.getElementById('share-wa').href="https://wa.me/?text="+encodeURIComponent(SHARE_TEXT+" "+SHARE_URL);
+  document.getElementById('share-copy').addEventListener('click',function(){
+    function done(){ok.textContent="Enlace copiado. ¡Ya puedes pegarlo donde quieras!"}
+    function fallback(){var r=document.createRange();r.selectNodeContents(document.getElementById('share-url'));var sel=getSelection();sel.removeAllRanges();sel.addRange(r);ok.textContent="Enlace seleccionado: cópialo y compártelo."}
+    try{ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(SHARE_URL).then(done,fallback)} else fallback() }catch(e){fallback()}
+  });
+  var nb=document.getElementById('share-native');
+  if(navigator.share){nb.hidden=false;nb.addEventListener('click',function(){navigator.share({title:"Set Timeless de Dr. Grandel",text:SHARE_TEXT,url:SHARE_URL}).catch(function(){})})}
 
   var h=document.getElementById('top');
   function onScroll(){h.classList.toggle('scrolled',window.scrollY>30)}

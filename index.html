@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.className+=" js"</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Set Timeless de Dr. Grandel · Revitalizing Cream + Eye &amp; Lip</title>
+<meta name="description" content="El set Timeless de Dr. Grandel: Revitalizing Cream 50 ml y Eye &amp; Lip 15 ml. Antiedad con extracto de yemas de haya para rostro, cuello, escote, ojos y labios.">
+<link rel="icon" href="img/monogram.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Set Timeless de Dr. Grandel">
+<meta property="og:description" content="Revitalizing Cream 50 ml + Eye &amp; Lip 15 ml. El ritual antiedad completo, de mañana y de noche.">
+<meta property="og:image" content="img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0f3b2d">
+<link rel="preload" href="fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/cormorant-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/cormorant-garamond-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/cormorant-garamond-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:500;font-display:swap;src:url(fonts/cormorant-garamond-latin-500-italic.woff2) format("woff2")}
+@font-face{font-family:"Jost";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/jost-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Jost";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/jost-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Jost";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/jost-latin-600-normal.woff2) format("woff2")}
+:root{
+  --green:#0f3b2d; --green-2:#164a39; --green-ink:#0a2a20;
+  --gold:#b07a4f; --gold-txt:#663d1c; --gold-2:#ecdcbf; --gold-soft:#efdfc4;
+  --cream:#f6f1e8; --cream-2:#efe7da;
+  --ink:#1a1917; --muted:#3f3c37; --line:rgba(29,29,27,.14);
+  --serif:"Cormorant Garamond", Georgia, serif; --sans:"Jost", system-ui, sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.65;font-size:18px;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.eyebrow{font-size:16px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--gold-txt)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;font-variant-numeric:lining-nums}
+h2{font-size:clamp(34px,4.4vw,54px)}
+h1 em,h2 em{font-style:italic;color:var(--gold-txt)}
+h3{font-size:28px}
+p.lead{font-size:19px;color:var(--muted);max-width:640px}
+section{padding:110px 0}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--sans);font-weight:500;font-size:17px;letter-spacing:.04em;text-decoration:none;padding:15px 26px;border-radius:999px;transition:.25s;border:1.5px solid transparent;cursor:pointer}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:#6e4420;color:#fff}
+.btn-wa:hover{background:#56341a}
+.btn-ghost{border-color:var(--green);color:var(--green)}
+.btn-ghost:hover{background:rgba(15,59,45,.06)}
+.btn-light{background:#fff;color:var(--green)}
+.btn-light:hover{background:var(--gold-soft)}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:.3s}
+header.scrolled{background:rgba(246,241,232,.95);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand img{height:22px;width:auto}
+.brand .sep{width:1px;height:22px;background:var(--line)}
+.brand .tl{font-size:16px;letter-spacing:.24em;text-transform:uppercase;font-weight:600;color:var(--gold-txt)}
+.nav ul{display:flex;gap:30px;list-style:none;font-size:16.5px}
+.nav ul a{text-decoration:none;font-weight:500}
+.nav ul a:hover{color:var(--gold-txt)}
+.nav .btn{padding:11px 20px;font-size:16px}
+@media (max-width:980px){.nav ul{display:none}}
+@media (max-width:540px){.brand .sep,.brand .tl{display:none}.nav .btn span{display:none}.nav .btn{padding:11px 13px}}
+
+/* hero */
+.hero{padding:130px 0 90px;background:var(--cream)}
+.hero-grid{display:grid;grid-template-columns:1fr 1.02fr;gap:60px;align-items:center}
+.hero h1{font-size:clamp(44px,5.8vw,78px);margin:18px 0 24px}
+.hero .lead{color:var(--ink);margin-bottom:34px}
+.ctas{display:flex;flex-wrap:wrap;gap:14px}
+.hero .facts{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:34px;margin-top:50px;padding-top:26px;border-top:1px solid var(--line)}
+.hero .facts b{display:block;font-family:var(--serif);font-size:30px;font-weight:500;color:var(--green);line-height:1.05}
+.hero .facts span{font-size:16px;color:var(--muted)}
+.hero-pic{position:relative}
+.hero-pic img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px}
+.hero-pic .badge{position:absolute;left:-22px;bottom:40px;background:var(--green);color:#fff;padding:20px 24px;border-radius:2px;max-width:250px}
+.hero-pic .badge b{display:block;font-family:var(--serif);font-weight:500;font-size:24px;line-height:1.15;color:var(--gold-soft);margin-bottom:4px}
+.hero-pic .badge span{font-size:16px}
+@media (max-width:900px){.hero{padding-top:110px}.hero-grid{grid-template-columns:1fr;gap:44px}.hero-pic .badge{left:14px;bottom:14px}}
+@media (max-width:600px){.hero-pic .badge{display:none}.hero .facts{grid-template-columns:1fr 1fr;gap:22px 26px}.hero .facts b{font-size:26px}}
+
+/* por qué */
+.why{background:#fff}
+.grid-2{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:center}
+.why .frame img{border-radius:4px;aspect-ratio:4/4.3;object-fit:cover;width:100%}
+.why h2{margin:16px 0 22px}
+.axes{margin-top:40px}
+.axis{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:22px 0;border-top:1px solid var(--line)}
+.axis:last-child{border-bottom:1px solid var(--line)}
+.axis .n{font-family:var(--serif);font-size:30px;color:var(--gold-txt);line-height:1}
+.axis h4{font-weight:600;font-size:18px;margin-bottom:4px}
+.axis p{color:var(--muted)}
+.quote{margin-top:34px;font-family:var(--serif);font-style:italic;font-weight:500;font-size:26px;line-height:1.35;color:var(--green);padding-left:22px;border-left:2px solid var(--gold)}
+@media (max-width:900px){.grid-2{grid-template-columns:1fr;gap:50px}}
+
+/* contenido */
+.inside{background:var(--cream)}
+.head-c{text-align:center;max-width:760px;margin:0 auto 60px}
+.head-c h2{margin:16px 0 18px}
+.head-c .lead{margin:0 auto}
+.prods{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.prod{background:#fff;border-radius:4px;overflow:hidden;display:grid;grid-template-columns:.85fr 1fr;box-shadow:0 30px 60px -48px rgba(15,59,45,.5)}
+.prod .ph{background:#1d4a35}
+.prod .ph img{width:100%;height:100%;object-fit:cover}
+.prod .tx{padding:34px 30px 30px}
+.prod .k{font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-txt);font-weight:600}
+.prod h3{margin:8px 0 4px}
+.prod .fmt{font-size:16.5px;color:var(--muted);margin-bottom:16px}
+.prod ul{list-style:none;display:grid;gap:10px}
+.prod li{padding-left:20px;position:relative;font-size:17px;line-height:1.5}
+.prod li::before{content:"";position:absolute;left:0;top:10px;width:9px;height:9px;border-radius:50%;background:var(--gold)}
+.prod li b{font-weight:600}
+.prod .act{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:16px;color:var(--muted)}
+.prod .act b{color:var(--ink);font-weight:600}
+@media (max-width:1060px){.prods{grid-template-columns:1fr}}
+@media (max-width:620px){.prod{grid-template-columns:1fr}.prod .ph{aspect-ratio:1}.prod .ph img{object-position:center 40%}}
+.duo{margin-top:32px;background:var(--green);color:#f3eee5;border-radius:4px;padding:34px 38px;display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center}
+.duo .k{font-size:16px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-2);font-weight:600}
+.duo h4{font-family:var(--serif);font-size:30px;font-weight:500;margin-top:4px;line-height:1.1}
+.duo p{font-size:18px;color:#f1ebe0}
+@media (max-width:860px){.duo{grid-template-columns:1fr;gap:14px}}
+
+/* activo */
+.active{background:#f3ebdd;padding:0;overflow:hidden}
+.active .inner{display:grid;grid-template-columns:1fr 1fr;min-height:520px}
+.active .pic{background:url(img/yema-haya.jpg) center/cover}
+.active .txt{padding:90px 70px;display:flex;flex-direction:column;justify-content:center}
+.active h2{font-size:clamp(32px,3.6vw,46px);margin:14px 0 20px}
+.active p+p{margin-top:14px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chips span{font-size:16px;padding:8px 15px;border:1px solid rgba(102,61,28,.55);border-radius:999px;color:var(--gold-txt);font-weight:500}
+@media (max-width:900px){.active .inner{grid-template-columns:1fr}.active .pic{height:300px}.active .txt{padding:60px 28px}}
+
+/* ritual */
+.ritual{background:var(--green);color:#f3eee5}
+.ritual .eyebrow{color:var(--gold-2)}
+.ritual h2 em{color:var(--gold-2)}
+.ritual .lead{color:#f1ebe0}
+.ritual .head-c{margin-bottom:56px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.step{background:var(--green-2);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:30px 26px}
+.step .n{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--gold-2);color:var(--green);font-family:var(--serif);font-weight:600;font-size:24px}
+.step h4{font-family:var(--serif);font-weight:500;font-size:26px;line-height:1.15;margin:16px 0 8px;color:#fff}
+.step p{font-size:17px;color:#f1ebe0}
+.step .q{display:block;margin-top:12px;font-size:16px;color:var(--gold-soft);font-weight:500}
+@media (max-width:980px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}}
+.when{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}
+.when div{border:1px solid rgba(255,255,255,.22);border-radius:4px;padding:24px 26px}
+.when b{display:block;font-family:var(--serif);font-weight:500;font-size:26px;color:var(--gold-soft);margin-bottom:4px}
+.when p{font-size:17px;color:#f1ebe0}
+@media (max-width:760px){.when{grid-template-columns:1fr}}
+
+/* para quién */
+.who{background:#fff}
+.who h2{margin:16px 0 22px}
+.checks{list-style:none;display:grid;gap:14px;margin-top:30px}
+.checks li{display:grid;grid-template-columns:30px 1fr;gap:12px;font-size:18px;align-items:start}
+.checks li svg{width:26px;height:26px;color:var(--green);margin-top:2px}
+.note{margin-top:30px;background:var(--cream);border-left:3px solid var(--gold);padding:20px 24px;font-size:17px;border-radius:2px}
+.note b{font-weight:600}
+.who .frame img{border-radius:4px;aspect-ratio:1/1.05;object-fit:cover;object-position:center 30%;width:100%}
+
+/* marca */
+.brand-sec{background:var(--cream-2);position:relative;overflow:hidden}
+.brand-sec .mono-bg{position:absolute;right:-120px;top:50%;transform:translateY(-50%);width:560px;opacity:.07;pointer-events:none}
+.brand-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:center;position:relative}
+.brand-sec h2{margin:16px 0 22px}
+.brand-sec .wm-big{height:34px;width:auto;margin-bottom:28px}
+.brand-sec p{color:var(--muted)}
+.brand-sec p+p{margin-top:16px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.stat{background:var(--cream-2);padding:34px 30px}
+.stat b{display:block;font-family:var(--serif);font-weight:500;font-size:52px;line-height:1;color:var(--green);font-variant-numeric:lining-nums}
+.stat b small{font-size:28px}
+.stat span{display:block;margin-top:10px;font-size:17px;color:var(--muted)}
+.pillars{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.pillars span{font-size:16px;padding:8px 15px;background:#fff;border-radius:999px;font-weight:500}
+@media (max-width:900px){.brand-grid{grid-template-columns:1fr;gap:50px}}
+
+/* faq */
+.faq{background:var(--cream)}
+.faq-list{max-width:860px;margin:0 auto}
+.faq details{border-top:1px solid var(--line);padding:4px 0}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:20px 0;font-family:var(--serif);font-size:26px;font-weight:500;line-height:1.2}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--sans);font-size:28px;color:var(--gold-txt);flex:none;transition:.2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 22px;color:var(--muted);max-width:760px}
+
+/* cta final */
+.final{background:var(--green);color:#f3eee5;text-align:center;position:relative;overflow:hidden}
+.final .eyebrow{color:var(--gold-2)}
+.final h2{margin:16px auto 18px;max-width:780px}
+.final h2 em{color:var(--gold-2)}
+.final .lead{margin:0 auto 38px;color:#f1ebe0}
+.final .mono{width:64px;margin:0 auto 22px}
+.final .small{margin-top:18px;font-size:16px;color:#e6dfd2}
+
+footer{background:var(--green-ink);color:#ece5d8;padding:46px 0;font-size:16.5px}
+footer .f{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer img{height:18px;width:auto}
+
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:none;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.4)}
+.wa-float svg{width:30px;height:30px}
+@media (max-width:760px){.wa-float{display:grid}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></symbol>
+  <symbol id="ok" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m7.5 12.3 3 3 6-6.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header id="top">
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="Dr. Grandel · Timeless">
+      <img src="img/wordmark-dark.svg" alt="Dr. Grandel">
+      <span class="sep"></span><span class="tl">Timeless</span>
+    </a>
+    <ul>
+      <li><a href="#contenido">Qué contiene</a></li>
+      <li><a href="#activo">El activo</a></li>
+      <li><a href="#ritual">Cómo se usa</a></li>
+      <li><a href="#para-quien">Para quién</a></li>
+      <li><a href="#preguntas">Preguntas</a></li>
+    </ul>
+    <a class="btn btn-wa" href="#" data-wa data-ev="wa-cabecera"><svg><use href="#wa"/></svg><span>Tu asesora</span></a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div class="rv">
+      <span class="eyebrow">Set Timeless · Dr. Grandel</span>
+      <h1>Tu ritual antiedad, <em>completo</em> en una caja.</h1>
+      <p class="lead">Timeless Revitalizing Cream y Timeless Eye &amp; Lip: la crema que alisa y fortalece tu piel, y el cuidado que trabaja la mirada y los labios. Dos fórmulas con extracto de yemas de haya, pensadas para usarse juntas cada mañana y cada noche.</p>
+      <div class="ctas">
+        <a class="btn btn-wa" href="#" data-wa data-ev="wa-hero"><svg><use href="#wa"/></svg>Habla con tu asesora personal</a>
+        <a class="btn btn-ghost" href="#contenido">Ver qué contiene</a>
+      </div>
+      <div class="facts">
+        <div><b>50 ml + 15 ml</b><span>crema y contorno</span></div>
+        <div><b>Mañana y noche</b><span>cuidado de 24 horas</span></div>
+        <div><b>Made in Germany</b><span>desde 1947</span></div>
+      </div>
+    </div>
+    <div class="hero-pic rv">
+      <img src="img/set-caja.jpg" alt="Caja verde del set Timeless de Dr. Grandel abierta, con Revitalizing Cream y Eye &amp; Lip">
+      <div class="badge"><b>Rostro, cuello y escote</b><span>y el contorno de ojos y labios.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ -->
+<section class="why">
+  <div class="wrap grid-2">
+    <div class="frame rv"><img src="img/timeless-piel.jpg" alt="Mujer madura con la piel alisada y luminosa"></div>
+    <div class="rv">
+      <span class="eyebrow">Lo que le pasa a tu piel</span>
+      <h2>No es solo la arruga: <em>es lo que hay debajo</em></h2>
+      <p class="lead">Con los años, la piel cambia en varios frentes a la vez. Por eso una crema rica, sin más, no basta: hay que devolverle el ritmo y ayudarla a retener el agua.</p>
+      <div class="axes">
+        <div class="axis"><span class="n">01</span><div><h4>Se renueva más despacio</h4><p>La superficie se vuelve más apagada y las líneas se marcan más.</p></div></div>
+        <div class="axis"><span class="n">02</span><div><h4>Retiene peor el agua</h4><p>Pierde parte de sus lípidos, y aparecen la tirantez y la aspereza.</p></div></div>
+        <div class="axis"><span class="n">03</span><div><h4>La mirada y los labios lo notan antes</h4><p>Es la piel más fina del rostro: ahí aparecen primero las arrugas de expresión, las ojeras y la hinchazón.</p></div></div>
+      </div>
+      <p class="quote">«Timeless trabaja la renovación y la hidratación a la vez. El set suma el cuidado que pide la mirada.»</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENIDO -->
+<section class="inside" id="contenido">
+  <div class="wrap">
+    <div class="head-c rv">
+      <span class="eyebrow">Qué contiene el set</span>
+      <h2>Dos fórmulas, <em>un mismo idioma</em></h2>
+      <p class="lead">Todo lo que necesitas para empezar: la crema de 24 horas y el contorno que se aplica justo antes de ella.</p>
+    </div>
+    <div class="prods">
+      <article class="prod rv">
+        <div class="ph"><img src="img/crema.jpg" alt="Tarro de Timeless Revitalizing Cream"></div>
+        <div class="tx">
+          <span class="k">Crema 24 horas</span>
+          <h3>Timeless Revitalizing Cream</h3>
+          <p class="fmt">50 ml · piel seca a mixta</p>
+          <ul>
+            <li><b>Alisa</b> líneas y arrugas finas.</li>
+            <li><b>Fortalece</b> la piel que ha perdido resistencia.</li>
+            <li><b>Protege</b> de la pérdida de hidratación.</li>
+            <li>Deja una sensación <b>flexible y confortable</b>.</li>
+          </ul>
+          <p class="act"><b>Activos:</b> extracto de yemas de haya, ceramidas, escualano y extracto de avena.</p>
+        </div>
+      </article>
+      <article class="prod rv">
+        <div class="ph"><img src="img/eye-lip.jpg" alt="Dosificador de Timeless Eye &amp; Lip"></div>
+        <div class="tx">
+          <span class="k">Contorno de ojos y labios</span>
+          <h3>Timeless Eye &amp; Lip</h3>
+          <p class="fmt">15 ml · todo tipo de piel</p>
+          <ul>
+            <li><b>Alisa</b> las arrugas de expresión y el contorno de labios.</li>
+            <li><b>Reduce</b> visiblemente ojeras e hinchazón.</li>
+            <li><b>Reafirma</b> la mirada y la boca.</li>
+            <li><b>Efecto óptico</b> inmediato sobre las líneas finas.</li>
+          </ul>
+          <p class="act"><b>Activos:</b> Drainage Komplex, Age Corrector Complex, yemas de haya, escualano y pigmentos Soft Focus.</p>
+        </div>
+      </article>
+    </div>
+    <div class="duo rv">
+      <div><span class="k">Por qué juntas</span><h4>Primero el contorno, después la crema</h4></div>
+      <p>Las cremas Timeless se aplican siempre después del contorno de ojos. Con el set tienes los dos pasos y la seguridad de que ningún activo se pisa: las dos fórmulas comparten el extracto de yemas de haya.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVO -->
+<section class="active" id="activo">
+  <div class="inner">
+    <div class="pic" role="img" aria-label="Estructura molecular dorada sobre células de la piel"></div>
+    <div class="txt rv">
+      <span class="eyebrow">El activo de Timeless</span>
+      <h2>Extracto de yemas de haya: <em>la energía del brote</em></h2>
+      <p>Se obtiene de los brotes jóvenes de la haya (<i>Fagus Sylvatica</i>), la parte de la planta que concentra la energía para crecer. Es rico en vitaminas, aminoácidos, lípidos, minerales y polifenoles.</p>
+      <p>Estimula la oxigenación de las células, la renovación celular y las defensas naturales de la piel. El resultado: una piel más lisa y luminosa, con un activo muy bien tolerado.</p>
+      <div class="chips"><span>Renovación celular</span><span>Oxigenación</span><span>Defensas naturales</span><span>Muy bien tolerado</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- RITUAL -->
+<section class="ritual" id="ritual">
+  <div class="wrap">
+    <div class="head-c rv">
+      <span class="eyebrow">Cómo se usa</span>
+      <h2>Cuatro gestos, <em>mañana y noche</em></h2>
+      <p class="lead">De lo más fluido a lo más rico. Menos de dos minutos que tu piel nota cada día.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><span class="n">1</span><h4>Limpia</h4><p>Empieza con la piel limpia, con tu limpiador habitual.</p></div>
+      <div class="step rv"><span class="n">2</span><h4>Eye &amp; Lip</h4><p>Aplícalo alrededor de los ojos y de los labios.</p><span class="q">Cantidad: un guisante</span></div>
+      <div class="step rv"><span class="n">3</span><h4>Revitalizing Cream</h4><p>Extiéndela sobre rostro, cuello y escote.</p><span class="q">Cantidad: una avellana</span></div>
+      <div class="step rv"><span class="n">4</span><h4>Protección solar</h4><p>Por la mañana, sella la rutina con fotoprotección: es el mejor seguro del resultado.</p><span class="q">Solo de día</span></div>
+    </div>
+    <div class="when rv">
+      <div><b>Por la mañana</b><p>Limpieza · Eye &amp; Lip · Revitalizing Cream · protección solar.</p></div>
+      <div><b>Por la noche</b><p>Limpieza · Eye &amp; Lip · Revitalizing Cream. Tu piel trabaja mientras descansas.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PARA QUIÉN -->
+<section class="who" id="para-quien">
+  <div class="wrap grid-2">
+    <div class="rv">
+      <span class="eyebrow">Para quién es</span>
+      <h2>Por cómo está tu piel, <em>no por tu edad</em></h2>
+      <p class="lead">Timeless está pensada para la piel madura, a partir de los 35 años. Lo que decide no es la fecha de nacimiento, sino lo que ves en el espejo.</p>
+      <ul class="checks">
+        <li><svg><use href="#ok"/></svg>Las líneas ya no se van cuando descansas.</li>
+        <li><svg><use href="#ok"/></svg>Notas la piel tirante después de la limpieza, o en las mejillas.</li>
+        <li><svg><use href="#ok"/></svg>Tu piel es seca o mixta y pierde hidratación con facilidad.</li>
+        <li><svg><use href="#ok"/></svg>Te preocupan las ojeras, la hinchazón o las arrugas de expresión.</li>
+      </ul>
+      <p class="note"><b>¿Tu piel brilla mucho o es muy seca?</b> Timeless tiene una crema para cada estado de la piel. Tu asesora personal te dice si el set es lo que te conviene o qué crema encaja mejor contigo.</p>
+    </div>
+    <div class="frame rv"><img src="img/hero.jpg" alt="Mujer madura sonriente con la piel cuidada"></div>
+  </div>
+</section>
+
+<!-- MARCA -->
+<section class="brand-sec" id="marca">
+  <img class="mono-bg" src="img/monogram.svg" alt="">
+  <div class="wrap brand-grid">
+    <div class="rv">
+      <img class="wm-big" src="img/wordmark-dark.svg" alt="Dr. Grandel">
+      <span class="eyebrow">La casa detrás de Timeless</span>
+      <h2>Ciencia alemana desde <em>Augsburgo</em>, desde 1947</h2>
+      <p>Dr. Grandel nace en 1947 en Augsburgo de la mano del químico Dr. Felix Grandel. Hoy es una empresa familiar en tercera generación que investiga, desarrolla, fabrica y controla la calidad de sus fórmulas en sus propios laboratorios.</p>
+      <p>Pionera de las ampollas cosméticas desde 1957, hace de la cosmética de activos una disciplina científica, con fórmulas de alta tolerancia para la piel.</p>
+      <div class="pillars"><span>Laboratorios propios</span><span>Made in Germany</span><span>Alta tolerancia cutánea</span><span>100 % energía verde</span></div>
+    </div>
+    <div class="stats rv">
+      <div class="stat"><b>75<small>+</small></b><span>años de investigación y desarrollo</span></div>
+      <div class="stat"><b>1957</b><span>pionera en ampollas cosméticas</span></div>
+      <div class="stat"><b>50<small>+</small></b><span>países donde está presente</span></div>
+      <div class="stat"><b>3.ª</b><span>generación de la familia Grandel</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="preguntas">
+  <div class="wrap">
+    <div class="head-c rv">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2>Lo que nos <em>preguntáis</em></h2>
+    </div>
+    <div class="faq-list rv">
+      <details><summary>¿A partir de qué edad puedo usar Timeless?</summary><p>Dr. Grandel la propone a partir de los 35 años, pero lo que importa es el estado de tu piel: cuando las líneas ya no se van al descansar y la piel tarda más en recuperarse, es el momento.</p></details>
+      <details><summary>¿En qué orden se aplican los dos productos?</summary><p>Primero Eye &amp; Lip alrededor de los ojos y de los labios, y después Revitalizing Cream en rostro, cuello y escote. Siempre sobre la piel limpia, mañana y noche.</p></details>
+      <details><summary>¿Puedo usar la crema también por la noche?</summary><p>Sí. Revitalizing Cream es un cuidado de 24 horas: se usa por la mañana y por la noche.</p></details>
+      <details><summary>¿Eye &amp; Lip sirve de verdad para los labios?</summary><p>Sí, está formulado para las dos zonas a la vez: el contorno de ojos y el contorno de labios, donde antes se notan las arrugas de expresión. Evita el contacto directo con los ojos.</p></details>
+      <details><summary>¿Necesito protección solar?</summary><p>Por la mañana, sí. En cualquier rutina antiedad, la fotoprotección diaria es lo que mejor protege el resultado.</p></details>
+      <details><summary>Mi piel es grasa o muy seca, ¿me sirve el set?</summary><p>Revitalizing Cream está indicada para piel seca a mixta. Si tu piel brilla mucho o es muy seca, la línea Timeless tiene otras cremas pensadas para ti: escribe a tu asesora personal y te orienta.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final" id="contacto">
+  <div class="wrap">
+    <img class="mono rv" src="img/monogram-light.svg" alt="">
+    <span class="eyebrow rv">Tu asesora personal</span>
+    <h2 class="rv">¿Es el set Timeless <em>para tu piel</em>?</h2>
+    <p class="lead rv">Escríbele por WhatsApp. Te pregunta cómo está tu piel, resuelve tus dudas y te ayuda a conseguir tu set.</p>
+    <a class="btn btn-light rv" href="#" data-wa data-ev="wa-final"><svg style="color:#25d366"><use href="#wa"/></svg>Habla con tu asesora personal en WhatsApp</a>
+    <p class="small rv">Atención personal, sin compromiso.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap f">
+    <img src="img/wordmark-white.svg" alt="Dr. Grandel">
+    <span>Dr. Grandel Spain · C/ Tuset 23, 6-5 · 08006 Barcelona</span>
+    <span>© 2026 Dr. Grandel Spain</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="#" data-wa data-ev="wa-flotante" aria-label="Hablar con tu asesora por WhatsApp"><svg><use href="#wa"/></svg></a>
+
+<script>
+(function(){
+  /* ===== WhatsApp de la asesora =====
+     Pon aquí el número con prefijo de país y sin espacios ni +, p. ej. "34600111222".
+     Mientras esté vacío, los botones abren WhatsApp para elegir contacto. */
+  var WA_NUMBER = "";
+  var WA_TEXT = "Hola, me interesa el set Timeless de Dr. Grandel y me gustaría hablar con mi asesora personal.";
+  var url = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(WA_TEXT);
+  document.querySelectorAll('[data-wa]').forEach(function(a){a.href=url;a.target="_blank";a.rel="noopener"});
+
+  var h=document.getElementById('top');
+  function onScroll(){h.classList.toggle('scrolled',window.scrollY>30)}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el)});
+    setTimeout(function(){if(!document.querySelector('.rv.in')){els.forEach(function(el){el.classList.add('in')})}},2000);
+  } else { els.forEach(function(el){el.classList.add('in')}) }
+})();
+</script>
+</body>
+</html>

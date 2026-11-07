@@ -262,6 +262,19 @@ header{top:0}
 .final::before{content:"";position:absolute;inset:0;background:rgba(10,42,32,.9)}
 .final .wrap{position:relative}
 
+.final{text-align:left}
+.f-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.f-pic{margin:0;position:relative;border-radius:4px;overflow:hidden;box-shadow:0 40px 80px -40px rgba(0,0,0,.7);outline:1px solid rgba(236,220,191,.35);outline-offset:10px}
+.f-pic img{width:100%;aspect-ratio:1;object-fit:cover}
+.f-pic figcaption{position:absolute;left:0;right:0;bottom:0;padding:70px 24px 20px;background:linear-gradient(0deg,rgba(10,42,32,.95) 35%,rgba(10,42,32,0));color:#fff;font-size:16.5px}
+.f-pic figcaption b{display:block;font-family:var(--serif);font-weight:500;font-size:28px;color:var(--gold-soft);line-height:1.1}
+.f-tag{position:absolute;top:18px;right:18px;background:#6e4420;color:#fff;font-weight:600;font-size:18px;padding:8px 14px;border-radius:999px}
+.final .f-txt h2{margin:14px 0 16px;max-width:none}
+.final .f-txt .lead{margin:0 0 26px}
+.final .price-f{justify-content:flex-start;margin:0 0 28px}
+@media (max-width:900px){.final{text-align:center}.f-grid{grid-template-columns:1fr;gap:44px}.f-pic{max-width:440px;margin:0 auto}.final .f-txt .lead{margin:0 auto 26px}.final .price-f{justify-content:center}}
+@media (max-width:520px){.f-pic figcaption{padding:40px 16px 14px;font-size:15px}.f-pic figcaption b{font-size:24px}.f-pic{outline-offset:6px}}
+
 .js .rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
 .js .rv.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
@@ -503,14 +516,20 @@ header{top:0}
 
 <!-- CTA FINAL -->
 <section class="final" id="contacto">
-  <div class="wrap">
-    <img class="mono rv" src="img/monogram-light.svg" alt="">
-    <span class="eyebrow rv">Tu asesora personal</span>
-    <h2 class="rv">¿Es el set Timeless <em>para tu piel</em>?</h2>
-    <p class="lead rv">Escríbele por WhatsApp. Te pregunta cómo está tu piel, resuelve tus dudas y te reserva tu set al precio de promoción.</p>
-    <div class="price-f rv"><s>190 €</s><b>95 €</b><span>Unidades limitadas</span></div><br>
-    <a class="btn btn-light rv" href="#" data-wa data-ev="wa-final"><svg style="color:#25d366"><use href="#wa"/></svg>Habla con tu asesora personal en WhatsApp</a>
-    <p class="small rv">Atención personal, sin compromiso. Promoción hasta agotar unidades.</p>
+  <div class="wrap f-grid">
+    <figure class="f-pic rv">
+      <img src="img/set-caja.jpg" alt="Set Timeless de Dr. Grandel: caja verde con Revitalizing Cream y Eye &amp; Lip">
+      <figcaption><b>Set Timeless</b><span style="white-space:nowrap">Revitalizing Cream 50 ml</span> + <span style="white-space:nowrap">Eye &amp; Lip 15 ml</span></figcaption>
+      <span class="f-tag">−50 %</span>
+    </figure>
+    <div class="f-txt">
+      <span class="eyebrow rv">Tu asesora personal</span>
+      <h2 class="rv">¿Es el set Timeless <em>para tu piel</em>?</h2>
+      <p class="lead rv">Escríbele por WhatsApp. Te pregunta cómo está tu piel, resuelve tus dudas y te reserva tu set al precio de promoción.</p>
+      <div class="price-f rv"><s>190 €</s><b>95 €</b><span>Unidades limitadas</span></div>
+      <div class="rv"><a class="btn btn-light" href="#" data-wa data-ev="wa-final"><svg style="color:#25d366"><use href="#wa"/></svg>Habla con tu asesora personal en WhatsApp</a></div>
+      <p class="small rv">Atención personal, sin compromiso. Promoción hasta agotar unidades.</p>
+    </div>
   </div>
 </section>
 

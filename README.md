@@ -9,7 +9,6 @@ Sin referencias a tratamiento de cabina ni a centros.
 - `img/`: imágenes y logotipos (wordmark y monograma en SVG)
 - Llamada a la acción: «Habla con tu asesora personal» por WhatsApp
 
-Pendiente:
-- Número de WhatsApp de la asesora: variable `WA_NUMBER` al final de `index.html` (formato `34600111222`).
+Asesoras: tabla `ASESORAS` al final de `index.html`. El enlace `?a=montse` dirige WhatsApp a esa asesora; sin parámetro se usa `DEFAULT`. El navegador recuerda la asesora y los enlaces para compartir la conservan.
 
 Publicación con GitHub Pages (rama `main`, carpeta raíz).

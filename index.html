@@ -523,7 +523,7 @@ header{top:0}
       <span class="f-tag">−50 %</span>
     </figure>
     <div class="f-txt">
-      <span class="eyebrow rv">Tu asesora personal</span>
+      <span class="eyebrow rv" id="asesora-ey">Tu asesora personal</span>
       <h2 class="rv">¿Es el set Timeless <em>para tu piel</em>?</h2>
       <p class="lead rv">Escríbele por WhatsApp. Te pregunta cómo está tu piel, resuelve tus dudas y te reserva tu set al precio de promoción.</p>
       <div class="price-f rv"><s>190 €</s><b>95 €</b><span>Unidades limitadas</span></div>
@@ -563,17 +563,32 @@ header{top:0}
 
 <script>
 (function(){
-  /* ===== WhatsApp de la asesora =====
-     Pon aquí el número con prefijo de país y sin espacios ni +, p. ej. "34600111222".
-     Mientras esté vacío, los botones abren WhatsApp para elegir contacto. */
-  var WA_NUMBER = "";
-  var WA_TEXT = "Hola, me interesa el set Timeless de Dr. Grandel en promoción a 95 € y me gustaría hablar con mi asesora personal.";
-  var url = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(WA_TEXT);
-  document.querySelectorAll('[data-wa]').forEach(function(a){a.href=url;a.target="_blank";a.rel="noopener"});
+  /* ===== Asesoras =====
+     Cada asesora tiene un código que va en el enlace: set-timeless.dr-grandel.es/?a=montse
+     Número con prefijo de país, sin espacios ni +. Para añadir otra asesora, añade una línea.
+     DEFAULT es la asesora a la que van los enlaces sin ?a= o con un código que no existe. */
+  var ASESORAS = {
+    montse: { nombre: "Montse", tel: "34687083737" }
+  };
+  var DEFAULT = "montse";
 
-  /* ===== Compartir ===== */
-  var SHARE_URL = "https://set-timeless.dr-grandel.es/";
+  var code = null;
+  try { var q = new URLSearchParams(location.search).get('a'); if (q) code = q.trim().toLowerCase(); } catch(e) {}
+  if (code && ASESORAS[code]) { try { localStorage.setItem('tmls_asesora', code); } catch(e) {} }
+  else { code = null; try { var sv = localStorage.getItem('tmls_asesora'); if (sv && ASESORAS[sv]) code = sv; } catch(e) {} }
+  var as = ASESORAS[code || DEFAULT];
+
+  var WA_TEXT = "Hola" + (code ? " " + as.nombre : "") + ", me interesa el set Timeless de Dr. Grandel en promoción a 95 € y me gustaría más información.";
+  var url = "https://wa.me/" + as.tel + "?text=" + encodeURIComponent(WA_TEXT);
+  document.querySelectorAll('[data-wa]').forEach(function(a){a.href=url;a.target="_blank";a.rel="noopener"});
+  if (code) {
+    var ey = document.getElementById('asesora-ey'); if (ey) ey.textContent = as.nombre + ", tu asesora personal";
+  }
+
+  /* ===== Compartir ===== (el enlace conserva la asesora) */
+  var SHARE_URL = "https://set-timeless.dr-grandel.es/" + (code ? "?a=" + code : "");
   var SHARE_TEXT = "Mira este set antiedad de Dr. Grandel: Timeless Revitalizing Cream + Eye & Lip, ahora a 95 € en lugar de 190 €. Unidades limitadas:";
+  document.getElementById('share-url').textContent = SHARE_URL.replace('https://','');
   var ok=document.getElementById('share-ok');
   document.getElementById('share-wa').href="https://wa.me/?text="+encodeURIComponent(SHARE_TEXT+" "+SHARE_URL);
   document.getElementById('share-copy').addEventListener('click',function(){

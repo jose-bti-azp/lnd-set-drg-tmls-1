@@ -610,5 +610,33 @@ header{top:0}
   } else { els.forEach(function(el){el.classList.add('in')}) }
 })();
 </script>
+<!-- ===== Analítica GoatCounter (sin cookies) · panel: drg-set-timeless.goatcounter.com ===== -->
+<script data-goatcounter="https://drg-set-timeless.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+(function(){
+  function ev(name, title){
+    try{ if(window.goatcounter && goatcounter.count){ goatcounter.count({path:name, title:title||name, event:true}); } }catch(e){}
+  }
+  // Clics en botones (WhatsApp y compartir): atributo data-ev
+  document.addEventListener('click', function(e){
+    var a = e.target.closest ? e.target.closest('[data-ev]') : null;
+    if(a){ ev(a.getAttribute('data-ev')); }
+  }, true);
+  // Asesora de la visita (?a=...)
+  window.addEventListener('load', function(){
+    setTimeout(function(){
+      try{ var q=new URLSearchParams(location.search).get('a'); if(q){ ev('asesora-'+q.trim().toLowerCase()); } }catch(e){}
+    }, 1500);
+  });
+  // Hasta dónde bajan: una vez por sección
+  var seen={};
+  if('IntersectionObserver' in window){
+    var so=new IntersectionObserver(function(es){es.forEach(function(x){
+      if(x.isIntersecting){ var id=x.target.id; if(!seen[id]){ seen[id]=1; ev('scroll-'+id); } so.unobserve(x.target); }
+    })},{threshold:.35});
+    ['contenido','detalle','activo','ritual','para-quien','marca','preguntas','contacto','compartir'].forEach(function(id){var el=document.getElementById(id); if(el) so.observe(el);});
+  }
+})();
+</script>
 </body>
 </html>

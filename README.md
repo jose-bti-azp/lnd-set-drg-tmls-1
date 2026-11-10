@@ -13,4 +13,7 @@ Asesoras: tabla `ASESORAS` al final de `index.html`. El enlace `?a=montse` dirig
 
 Analítica: GoatCounter (sin cookies), panel drg-set-timeless.goatcounter.com. Eventos: wa-cabecera, wa-hero, wa-final, wa-flotante, compartir-whatsapp, compartir-copiar, compartir-otras, asesora-<código>, scroll-<sección>.
 
+Aviso legal y privacidad: `aviso-legal.html` (titular DIST. E IMP. DE PRODUCTOS IB GROUP S.L., datos tomados de etre-belle.es).
+Envío gratuito en Península y Baleares · precios con IVA incluido.
+
 Publicación con GitHub Pages (rama `main`, carpeta raíz).
